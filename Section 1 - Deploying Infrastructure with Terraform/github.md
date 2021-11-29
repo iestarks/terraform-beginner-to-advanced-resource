@@ -15,17 +15,18 @@ terraform {
   required_providers {
     github = {
       source = "integrations/github"
-      version = "4.3.2"
+      version = "~> 4.0"
+      #version = "4.3.2"
     }
   }
 }
 
 provider "github" {
-  token = "8c6f0e838e998844a8bb32b0050a7dee6a31a4df"
+  token = "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"
 }
 
 resource "github_repository" "example" {
-  name        = "terraform-repo"
+  name        = "terraform-course-repo"
 
   visibility  = "private"
 
